@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.homeContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F4F2DE;
+  text-align: center;
+  height: 80vh;
+  width: 30%;
+  position: relative;
+  left: 35%;
+  top: 100px;
+  padding: 12px;
+  border-radius:18px ;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.btn{
+  color:  red;
+}
+.Tit{
+  display: flex;
+  justify-content: center;
+}
+.mainCard{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card{
+  width: 30%;
+  margin: 20px;
+  background-color: #EEE2DE;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.addContainer{
+  position: relative;
+  background-color: #DDE6ED;
+  width: 30%;
+  height: 50vh;
+  padding: 20px;
+  text-align: center;
+  left: 35%;
+  top: 120px;
+  border-radius: 18px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.addContainer button{
+  margin: 15px;
+  background-color: #116A7B;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 30%;
+  border-radius: 8px;
+}
+.addContainer button:active{
+  background-color: blue;
+}
+@media(max-width:1080px){
+  .homeContainer{
+width: 30%;
+height: 75vh;
+  }
+}
+@media(max-width:875px){
+  .homeContainer{
+    width: 50%;
+    height: 75vh;
+      }
+}
+@media(max-width:600px){
+  .homeContainer{
+    width: 60%;
+    height: 75vh;
+    margin-left: -50px;
+      }
+}
+@media(max-width:500px){
+  .homeContainer{
+    width: 60%;
+    height: 70vh;
+      }   
+}
+@media(max-width:340px){
+  
+  .homeContainer{
+    width: 70%;
+    height: 70vh;
+    object-fit: cover;
+    padding: 30px;
+   
+      }   
+}
